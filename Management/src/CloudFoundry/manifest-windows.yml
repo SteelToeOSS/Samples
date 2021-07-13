@@ -2,7 +2,7 @@
 applications:
 - name: actuator
   buildpacks:
-   - hwc_buildpack
+   - binary_buildpack
   memory: 384M
   stack: windows
   command: .\CloudFoundry
@@ -10,3 +10,4 @@ applications:
     ASPNETCORE_ENVIRONMENT: Development
   services:
    - myMySqlService
+  random-route: true

@@ -4,7 +4,6 @@ applications:
   buildpacks:
    - dotnet_core_buildpack
   memory: 128M
-  command: cd ${HOME} && ./CloudFoundry
   env:
     ASPNETCORE_ENVIRONMENT: Development
   services:
